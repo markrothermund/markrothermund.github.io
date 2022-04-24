@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, inital-scale=1">
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<link rel="stylesheet" href="../css/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
 
@@ -12,32 +13,45 @@
 	<a href="../index.html" class="w3-bar-item w3-button w3-ripple w3-hover-none w3-hover-text-gray">Home</a>
 	<a href="#projects" class="w3-bar-item w3-button w3-ripple w3-hover-none w3-hover-text-gray">Projects</a>
 	<a href="#about" class="w3-bar-item w3-button w3-ripple w3-teal w3-hover-teal w3-hover-text-black">About Me</a>
-	<a href="#contact" class="w3-bar-item w3-button w3-ripple w3-hover-none w3-hover-text-gray">Contact</a>
+	<a href="contact.html" class="w3-bar-item w3-button w3-ripple w3-hover-none w3-hover-text-gray">Contact</a>
 </div>
 
-<div class="w3-container w3-padding-32">
-	<h1>About me</h1>
-	<p>Mark Rothermund is a Ph.D. student at Virginia Tech pursuing research in computational chemistry.
+<div class="row">
+	<div class="w3-container w3-padding-32 column">
+	<h1 class="w3-centered"><span class="w3-text-gray">About Me</span></h1>
+	<p class="w3-text-gray">Mark Rothermund is a Ph.D. student at Virginia Tech pursuing research in computational chemistry.
 	He earned his Master of Science in Chemistry at Western Carolina University (WCU) performing chemometric 
 	and analytical chemistry research headed by Dr. Scott Huffman with colaborative efforts between the 
 	Chemistry and Human Health Departments at WCU, culminating in his master's thesis titled, "Application 
 	of Infrared Spectroscopy and Partial Least Squares Discriminant Analysis to Determine the Gonotrophic Stage 
 	of <em>Aedes triseriatus</em>.
-	<br>
+	<br><br>
 	From his time at WCU, Mark has gained experience coding in Python, to perform chemometric analyses and create 
 	plots acceptable for publication, and C from the course "Computer Interfacing" in which he and his team assembled
 	a fluorometer and coded the Arduino that was used to control the detector and LED light source. Mark has taught 
 	General Chemistry labs and an Introductory Physics lab as a Graduate Teaching Assistant (GTA). He took on the
 	added responsibility of converting a General Chemistry lab procedure to a format readable by the browser-based 
-	online lab simulator at <a href="www.chem21labs.com">Chem 21 Labs</a>, and in doing so, learned basic HTML and
-	CSS.
-	<br>
-	In his free time, Mark enjoys spending time with his friends and family; playing with his dog, Beanz; gardening; 
-	learning new languages, both programming and natural; honing his programming skills; and trying new things in 
-	general. If you would like to learn more about Mark, please do not hesitate to <a href="/contact.html"> Reach 
-	out</a>
+	online lab simulator at <a href="https://www.chem21labs.com" target="_blank" class="w3-text-teal w3-hover-text-purple">Chem 21 Labs</a>, 
+	and in doing so, 
+	learned basic HTML and CSS.
+	<br><br>
+	Mark was born and raised in the city of Salisbury, NC. In his free time, Mark enjoys spending time with 
+	his friends and family; playing with his dog, Beanz; gardening; learning new languages, both programming and 
+	natural; honing his programming skills; and trying new things in general. If you would like to find out more 
+	about Mark, please do not hesitate to <a href="/contact.html" class="w3-text-teal w3-hover-text-purple">reach out</a>.
 	</p>
+	</div>
+
+	<div class="column">
+		<img class="slides" src="../images/Me.jpg" width="100%">
+		<img class="slides" src="../images/mii.png" width="100%">
+		<img class="slides" src="../images/Picture1.jpg" width="100%">
+	</div>
 </div>
+
+<script>
+w3.slideshow(".slides", 1500);
+</script>
 
 </body>
 </html>
