@@ -63,7 +63,7 @@ function test_input($data) {
 ?>
 
 
-<form method="post" action="php/action_page.php">
+<form method="post" action="<?php echo htmlspecialchars(php/action_page.php);?>">
 <input class="w3-input" type="text" placeholder="Name" required name="name">
 <input class="w3-input" type="text" placeholder="Email" required name="email">
 <textarea class="w3-input" placeholder="Message" required name="comment" cols="50" rows="10"></textarea><br>
