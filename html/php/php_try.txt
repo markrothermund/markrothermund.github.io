@@ -1,0 +1,37 @@
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+
+
+$headers = "From: $email_address/n";
+$sent = mail('markr96@vt.edu', 'Message from ' $name, $feedback, $headers);
+
+if ($sent) {
+
+?><html>
+<head>
+<title>Thank You</title>
+</head>
+<body>
+<h1>Thank You</h1>
+<p>Thank you for your message!</p>
+</body>
+</html>
+
+<?php
+
+} else {
+?><html>
+<head>
+<title>Something went wrong</title>
+</head>
+<body>
+<h1>Something went wrong</h1>
+<p>The message could not be sent. Please try again.</p>
+</body>
+</html>
+<?php
+}
+?>
